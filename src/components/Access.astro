@@ -1,0 +1,22 @@
+---
+// src/components/Access.astro
+---
+<section id="access" class="py-20 bg-white">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-16">Access</h2>
+    <div class="flex flex-col md:flex-row gap-10">
+      <div class="md:w-1/2">
+        <h3 class="text-xl font-bold mb-4">所在地</h3>
+        <p class="mb-2 text-slate-600">〒000-0000<br>〇〇県〇〇市〇〇 1-2-3<br>〇〇大学 理学部 〇〇研究室</p>
+        <p class="text-slate-600">最寄り駅：〇〇線 〇〇駅から徒歩10分</p>
+      </div>
+      <div class="md:w-1/2 h-64 bg-slate-200 rounded-lg overflow-hidden shadow-inner">
+        <!-- Google Maps Embed (サンプルとして場所を置いています) -->
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8280303808788!2d139.7649361115201!3d35.68123617247348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f7101%3A0x10cfa9518e8a100!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp" 
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,26 +1,27 @@
 ---
-// src/components/Blog.astro
-// 仮のダミーデータ
-const posts = [
-  { id: 1, title: "日本生物物理学会に参加しました", date: "2024.11.20", category: "News", image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=400" },
-  { id: 2, title: "論文がJournal of Cell Biologyに掲載されました", date: "2024.10.05", category: "Research", image: "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=400" },
-  { id: 3, title: "研究室のBBQを開催しました", date: "2024.08.15", category: "Event", image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=400" },
-];
+import { posts } from "../data/posts";
 ---
 <section id="blog" class="py-20 bg-slate-50">
   <div class="container mx-auto px-6">
     <h2 class="text-3xl font-bold text-center mb-16">News / Blog</h2>
     <div class="grid md:grid-cols-3 gap-8">
       {posts.map(post => (
-        <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+        <a href={`./blog/${post.id}`} class="bg-white rounded-lg overflow-hidden shadow-sm block hover:-translate-y-1 hover:shadow-md transition">
           <img src={post.image} alt={post.title} class="w-full h-48 object-cover" />
           <div class="p-6">
             <span class="text-xs font-bold text-blue-600 uppercase">{post.category}</span>
             <p class="text-sm text-slate-400 mt-1">{post.date}</p>
             <h3 class="text-lg font-bold mt-2 leading-tight">{post.title}</h3>
+            <p class="text-sm text-slate-500 mt-3">{post.excerpt}</p>
+            <span class="inline-flex items-center text-sm font-semibold text-blue-600 mt-4">続きを読む →</span>
           </div>
-        </div>
+        </a>
       ))}
+    </div>
+    <div class="text-center mt-10">
+      <a href="./blog" class="inline-flex items-center px-6 py-3 text-sm font-semibold text-white bg-blue-600 rounded-full shadow-sm hover:bg-blue-500 transition">
+        すべての投稿を見る
+      </a>
     </div>
   </div>
 </section>

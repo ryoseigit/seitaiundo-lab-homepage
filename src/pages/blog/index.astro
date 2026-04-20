@@ -1,0 +1,38 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import { posts } from "../../data/posts";
+
+const pageTitle = "News / Blog";
+---
+
+<Layout title={`${pageTitle} | 生体運動研究室`}>
+  <Header />
+  <main class="pt-28 pb-20 bg-slate-50 min-h-screen">
+    <section class="container mx-auto px-6">
+      <p class="text-sm font-semibold text-blue-600 uppercase tracking-wide">Blog</p>
+      <h1 class="text-3xl md:text-4xl font-bold mt-2 mb-6">{pageTitle}</h1>
+      <p class="text-slate-600 mb-12">
+        研究室の日常や研究成果、イベントレポートなどをお届けします。各投稿のカードをクリックすると詳細ページをご覧いただけます。
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        {posts.map(post => (
+          <a
+            href={`/blog/${post.id}`}
+            class="bg-white rounded-lg overflow-hidden shadow-sm block hover:-translate-y-1 hover:shadow-md transition"
+          >
+            <img src={post.image} alt={post.title} class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <span class="text-xs font-bold text-blue-600 uppercase">{post.category}</span>
+              <p class="text-sm text-slate-400 mt-1">{post.date}</p>
+              <h2 class="text-xl font-bold mt-2 leading-tight">{post.title}</h2>
+              <p class="text-sm text-slate-600 mt-3">{post.excerpt}</p>
+              <span class="inline-flex items-center text-sm font-semibold text-blue-600 mt-4">続きを読む →</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  </main>
+</Layout>

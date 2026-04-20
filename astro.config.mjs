@@ -7,5 +7,8 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  outDir: './public_html', 
+  base: '/~honda-l/', 
 });
+
 

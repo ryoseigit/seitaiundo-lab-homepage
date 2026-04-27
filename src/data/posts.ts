@@ -15,7 +15,7 @@ export const posts: Post[] = [
     date: "2024.11.20",
     category: "News",
     image:
-      "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=1200",
+      "src/assets/nagashisoumen.jpg",
     excerpt: "夏の恒例行事として、桑原研・大沼研と合同で流しそうめんを開催しました。",
     content: [
       "夏の暑さを忘れるために、桑原研と大沼研のみなさんと合同で流しそうめん会を開きました。準備から片付けまで協力し、他研究室との交流も深まりました。",
@@ -44,7 +44,7 @@ export const posts: Post[] = [
     date: "2024.08.15",
     category: "Event",
     image:
-      "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=1200",
+      "src/assets/get_kun.jpg",
     excerpt: "海外交流プログラムの一環で、チュラロンコン大学から短期留学生を受け入れました。",
     content: [
       "国際連携の強化を目的に、タイのチュラロンコン大学から短期留学生を受け入れました。研究テーマや実験手法を共有し、お互いのバックグラウンドを尊重しながら学び合っています。",

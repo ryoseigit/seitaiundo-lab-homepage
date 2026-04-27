@@ -1,0 +1,9 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#e0f2fe"/>
+  <circle cx="100" cy="60" r="25" fill="#0284c7"/>
+  <circle cx="70" cy="110" r="20" fill="#06b6d4"/>
+  <circle cx="130" cy="110" r="20" fill="#06b6d4"/>
+  <path d="M 100 85 Q 85 105 70 130" stroke="#0284c7" stroke-width="3" fill="none"/>
+  <path d="M 100 85 Q 115 105 130 130" stroke="#0284c7" stroke-width="3" fill="none"/>
+  <text x="100" y="165" font-size="12" text-anchor="middle" fill="#0c4a6e" font-weight="bold">Actin</text>
+</svg>

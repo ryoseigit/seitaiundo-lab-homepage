@@ -18,16 +18,22 @@ const staff = [
 ];
 
 const students = [
-  { name: "三谷 隆大", role: "D3", theme: "Drebrin、サイトカラシンD" },
-  { name: "星田 政行", role: "D1", theme: "アクチンフィラメントのMotility assay" },
-  { name: "水木 鳳了", role: "M2", theme: "アクチン結合タンパク質ゲルゾリン" },
+  { name: "星田 政行", role: "D2", theme: "アクチンフィラメントのMotility assay" },
+  { name: "水木 鳳了", role: "D1", theme: "アクチン結合タンパク質ゲルゾリン" },
+  { name: "小野里 幸太", role: "M2", theme: "アクチン変異体の機能解析" },
+  { name: "木下 愛友", role: "M2", theme: "アクチン結合タンパク質コフィリン" },
   { name: "田路 卓巳", role: "M1", theme: "アクチン結合タンパク質Fascin" },
-  { name: "小野里 幸太", role: "M1", theme: "アクチン変異体の機能解析" },
-  { name: "木下 愛友", role: "M1", theme: "アクチン結合タンパク質コフィリン" },
-  { name: "岩渕 康平", role: "B4", theme: "QCM" },
-  { name: "内海 諒成 ", role: "B4", theme: "リポソーム内でのアクチン重合" },
-  { name: "熊倉 愛斗", role: "B4", theme: "MreB2の重合観察" },
-  { name: "田口 優希", role: "B4", theme: "MreB5の重合観察" }
+  { name: "岩渕 康平", role: "M1", theme: "QCM" },
+  { name: "内海 諒成 ", role: "M1", theme: "リポソーム内でのアクチン重合" },
+  { name: "熊倉 愛斗", role: "M1", theme: "MreB2の重合観察" },
+  { name: "田口 優希", role: "M1", theme: "MreB5の重合観察" },
+  { name: "安達 偲", role: "B4", theme: "" },
+  { name: "石井 康太郎", role: "B4", theme: "" },
+  { name: "岩倉 阿南", role: "B4", theme: "" },
+  { name: "小暮 太顕", role: "B4", theme: "" },
+
+  // { name: "三谷 隆大", role: "D3", theme: "Drebrin、サイトカラシンD" }
+
 ];
 ---
 
@@ -69,6 +75,10 @@ const students = [
             <p class="text-sm text-slate-500">{member.theme}</p>
           </div>
         ))}
+        <div class="col-span-full text-center mt-6">
+          <a href="./former_member" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition">
+            卒業生はこちらから
+          </a>
       </div>
     </div>
 

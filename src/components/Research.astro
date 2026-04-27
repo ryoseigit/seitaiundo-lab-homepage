@@ -1,25 +1,51 @@
 ---
 // src/components/Research.astro
+import actinImage from '../assets/research-actin.svg';
+import lightImage from '../assets/research-light.svg';
+import liposomeImage from '../assets/research-liposome.svg';
+import mrebImage from '../assets/research-mreb.svg';
+import qcmImage from '../assets/research-qcm.svg';
+
 const topics = [
-  { title: "アクチンと結合タンパク質", desc: "アクチン重合とATP加水分解、また結合タンパク質による制御の1分子レベル理解。Actin and Actin-Binding ProteinsMolecular analysis of actin polymerization, ATP hydrolysis, and regulation by binding proteins." },
-  { title: "光制御によるアクチン細胞骨格のダイナミクスの繰り返し制御", desc: "Optical Control of the Actin Cytoskeleton Engineering light-switchable molecules to regulate actin dynamics." },  
-  { title: "リポソーム", desc: "人工脂質膜を用いて、細胞を模した反応系。Liposomes Cell-mimetic reaction systems based on artificial lipid membranes." },
-  { title: "MreB（細菌ver.アクチン）", desc: "特に細胞を動かす能力を持つMreBの作用解明。Understanding how the bacterial actin homolog MreB contributes to cell motility." },
-  { title: "Quartz Crystal Microbalance (QCM)", desc: "水晶振動子の共振周波数の変化を利用た、アクチンとミオシンの相互作用や粘弾性変化測定。\n Probing actin–myosin interactions through state-dependent frequency shifts by QCM." },
+  { 
+    title: "アクチンと結合タンパク質", 
+    desc: "アクチン重合とATP加水分解、また結合タンパク質による制御の1分子レベル理解。Actin and Actin-Binding ProteinsMolecular analysis of actin polymerization, ATP hydrolysis, and regulation by binding proteins.",
+    image: actinImage
+  },
+  { 
+    title: "光制御によるアクチン細胞骨格のダイナミクスの繰り返し制御", 
+    desc: "Optical Control of the Actin Cytoskeleton Engineering light-switchable molecules to regulate actin dynamics.",
+    image: lightImage
+  },  
+  { 
+    title: "リポソーム", 
+    desc: "人工脂質膜を用いて、細胞を模した反応系。Liposomes Cell-mimetic reaction systems based on artificial lipid membranes.",
+    image: liposomeImage
+  },
+  { 
+    title: "MreB（細菌ver.アクチン）", 
+    desc: "特に細胞を動かす能力を持つMreBの作用解明。Understanding how the bacterial actin homolog MreB contributes to cell motility.",
+    image: mrebImage
+  },
+  { 
+    title: "Quartz Crystal Microbalance (QCM)", 
+    desc: "水晶振動子の共振周波数の変化を利用た、アクチンとミオシンの相互作用や粘弾性変化測定。\n Probing actin–myosin interactions through state-dependent frequency shifts by QCM.",
+    image: qcmImage
+  },
 ];
-
-
-
 
 ---
 <section id="research" class="py-20 bg-white">
   <div class="container mx-auto px-6">
     <h2 class="text-3xl font-bold text-center mb-16">Research</h2>
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
       {topics.map(topic => (
-        <div class="p-6 border border-slate-100 rounded-xl shadow-sm hover:shadow-md transition">
-          <h3 class="text-xl font-bold mb-4 text-blue-700">{topic.title}</h3>
-          <p class="text-slate-600 leading-relaxed">{topic.desc}</p>
+        <div class="p-5 border border-slate-100 rounded-xl shadow-sm hover:shadow-md transition overflow-hidden flex flex-col">
+          <div class="mb-4 h-40 flex items-center justify-center bg-slate-50 rounded-lg">
+            <img src={topic.image.src} alt={topic.title} class="w-32 h-32 object-contain" />
+          </div>
+          <h3 class="text-lg font-bold mb-3 text-blue-700 line-clamp-2">{topic.title}</h3>
+          <p class="text-sm text-slate-600 leading-relaxed line-clamp-4">{topic.desc}</p>
         </div>
       ))}
     </div>

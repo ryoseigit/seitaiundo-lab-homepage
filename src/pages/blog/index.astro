@@ -4,10 +4,7 @@ import Header from "../../components/Header.astro";
 import { posts } from "../../data/posts";
 
 const pageTitle = "News / Blog";
-<<<<<<< HEAD
 const base = import.meta.env.BASE_URL;
-=======
->>>>>>> e78fd93d642ebfe7fff8167e801221da5ac4c29f
 ---
 
 <Layout title={`${pageTitle} | 生体運動研究室`}>
@@ -23,11 +20,7 @@ const base = import.meta.env.BASE_URL;
       <div class="grid md:grid-cols-3 gap-8">
         {posts.map(post => (
           <a
-<<<<<<< HEAD
             href={`${base}blog/${post.id}`}
-=======
-            href={`/blog/${post.id}`}
->>>>>>> e78fd93d642ebfe7fff8167e801221da5ac4c29f
             class="bg-white rounded-lg overflow-hidden shadow-sm block hover:-translate-y-1 hover:shadow-md transition"
           >
             <img src={post.image} alt={post.title} class="w-full h-48 object-cover" />

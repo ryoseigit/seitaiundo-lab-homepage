@@ -1,6 +1,5 @@
 ---
 // src/components/Header.astro
-<<<<<<< HEAD
 const base = import.meta.env.BASE_URL;
 
 const navItems = [
@@ -11,16 +10,6 @@ const navItems = [
   { name: "Members", href: `${base}#members` },
   { name: "Blog", href: `${base}blog` },
   { name: "Access", href: `${base}#access` },
-=======
-const navItems = [
-  { name: "Top", href: "#" },
-  { name: "Research", href: "#research"},
-  { name: "Publications", href: "https://researchmap.jp/ikuko_fujiwara/published_papers?limit=20"},
-  { name: "Presentations", href: "https://researchmap.jp/ikuko_fujiwara/presentations?limit=100" },
-  { name: "Members", href: "#members" },
-  { name: "Blog", href: "#blog" },
-  { name: "Access", href: "#access" },
->>>>>>> e78fd93d642ebfe7fff8167e801221da5ac4c29f
 ];
 ---
 
@@ -29,11 +18,7 @@ const navItems = [
     <div class="flex justify-between items-center">
       <!-- ロゴ部分 -->
       <div class="flex items-center">
-<<<<<<< HEAD
         <a href={base} class="text-xl font-bold text-blue-900 tracking-tighter">
-=======
-        <a href="/" class="text-xl font-bold text-blue-900 tracking-tighter">
->>>>>>> e78fd93d642ebfe7fff8167e801221da5ac4c29f
           生体運動 <span class="text-blue-500">研究室</span>
         </a>
       </div>

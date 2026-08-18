@@ -1,0 +1,8 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#dcfce7"/>
+  <ellipse cx="100" cy="100" rx="45" ry="35" fill="#bbf7d0"/>
+  <path d="M 60 100 Q 80 70 100 60 Q 120 70 140 100" stroke="#16a34a" stroke-width="3" fill="none"/>
+  <path d="M 60 100 Q 80 130 100 140 Q 120 130 140 100" stroke="#16a34a" stroke-width="3" fill="none"/>
+  <circle cx="100" cy="100" r="4" fill="#15803d"/>
+  <text x="100" y="165" font-size="12" text-anchor="middle" fill="#166534" font-weight="bold">MreB</text>
+</svg>

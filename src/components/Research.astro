@@ -1,0 +1,24 @@
+---
+import { researchTopics } from '../data/research';
+
+const base = import.meta.env.BASE_URL;
+---
+<section id="research" class="py-20 bg-white">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-16">Research</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+      {researchTopics.map(topic => (
+        <a
+          href={`${base}research/${topic.slug}`}
+          class="group p-5 border border-slate-100 rounded-xl shadow-sm hover:shadow-md transition overflow-hidden flex flex-col"
+        >
+          <div class="mb-4 h-40 flex items-center justify-center bg-slate-50 rounded-lg">
+            <img src={`${base}${topic.image}`} alt={topic.title} class="w-32 h-32 object-contain" />
+          </div>
+          <h3 class="text-lg font-bold mb-3 text-blue-700 line-clamp-2 group-hover:text-blue-600 transition">{topic.title}</h3>
+          <p class="text-sm text-slate-600 leading-relaxed line-clamp-4">{topic.desc}</p>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

@@ -5,7 +5,11 @@ import { posts } from "../data/posts";
   <div class="container mx-auto px-6">
     <h2 class="text-3xl font-bold text-center mb-16">News / Blog</h2>
     <div class="grid md:grid-cols-3 gap-8">
+<<<<<<< HEAD
       {posts.slice(0, 6).map(post => (
+=======
+      {posts.map(post => (
+>>>>>>> e78fd93d642ebfe7fff8167e801221da5ac4c29f
         <a href={`./blog/${post.id}`} class="bg-white rounded-lg overflow-hidden shadow-sm block hover:-translate-y-1 hover:shadow-md transition">
           <img src={post.image} alt={post.title} class="w-full h-48 object-cover" />
           <div class="p-6">

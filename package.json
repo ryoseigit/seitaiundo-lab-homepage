@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "seitaiundo-lab-homepage-main",
+=======
+  "name": "",
+>>>>>>> e78fd93d642ebfe7fff8167e801221da5ac4c29f
   "type": "module",
   "version": "0.0.1",
   "scripts": {

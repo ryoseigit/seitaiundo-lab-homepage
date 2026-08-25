@@ -7,7 +7,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  outDir: './build', 
+  outDir: './public_html', 
   base: '/cell-motility/', 
 });
 

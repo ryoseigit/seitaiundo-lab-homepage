@@ -9,7 +9,9 @@ npm create astro@latest -- --template basics
 ## 🚀 このリポジトリからプロジェクトを複製する方法
 
 ①↓をコピーし、vscodeなどのコードエディタ上でgit clone "URL"を実行
-[Inside of your Astro project, you'll see the following folders and files:](https://github.com/ryoseigit/seitaiundo-lab-homepage.git)
+
+https://github.com/ryoseigit/seitaiundo-lab-homepage.git
+
 
 ②プロジェクトディレクトリに移動し、npm iを実行。node_modulesがインストールされる。
 
@@ -48,6 +50,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

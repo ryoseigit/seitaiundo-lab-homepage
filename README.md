@@ -6,6 +6,13 @@ npm create astro@latest -- --template basics
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
+## 🚀 このリポジトリからプロジェクトを複製する方法
+
+①↓をコピーし、vscodeなどのコードエディタ上でgit clone "URL"を実行
+[Inside of your Astro project, you'll see the following folders and files:](https://github.com/ryoseigit/seitaiundo-lab-homepage.git)
+
+②プロジェクトディレクトリに移動し、npm iを実行。node_modulesがインストールされる。
+
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
